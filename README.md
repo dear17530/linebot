@@ -1,1 +1,1 @@
-linebot
+line bot

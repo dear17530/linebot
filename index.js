@@ -66,7 +66,7 @@ bot.on('message', async event => {
         for (let i = first; i <= last; i++) {
           quickRepierMovieName.quickReply.items.push({
             type: 'action',
-            imageUrl: 'https://github.com/dear17530/line-bot/blob/main/trumpet.png?raw=true',
+            imageUrl: 'https://github.com/dear17530/linebot/blob/main/trumpet.png?raw=true',
             action: {
               type: 'message',
               label: `${movieName[i]}`,
@@ -371,7 +371,7 @@ bot.on('message', async event => {
         for (const location of movieLocationCity) {
           quickRepierCity.quickReply.items.push({
             type: 'action',
-            imageUrl: 'https://github.com/dear17530/line-bot/blob/main/location.png?raw=true',
+            imageUrl: 'https://github.com/dear17530/linebot/blob/main/location.png?raw=true',
             action: {
               type: 'message',
               label: `${location}`,
@@ -403,7 +403,7 @@ bot.on('message', async event => {
         for (const day of datemmdd) {
           quickRepierDate.quickReply.items.push({
             type: 'action',
-            imageUrl: 'https://github.com/dear17530/line-bot/blob/main/calendar.png?raw=true',
+            imageUrl: 'https://github.com/dear17530/linebot/blob/main/calendar.png?raw=true',
             action: {
               type: 'message',
               label: `${day}`,

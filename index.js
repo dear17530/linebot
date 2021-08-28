@@ -25,8 +25,8 @@ const movieId = []
 let inquireMovieId = ''
 let inquireMovieName = ''
 let inquireLocationNum = ''
-const movieLocationNum = []
-const movieLocationCity = []
+let movieLocationNum = []
+let movieLocationCity = []
 let quickRepierCity = []
 let quickRepierDate = []
 const datemmdd = []
@@ -359,6 +359,8 @@ bot.on('message', async event => {
       if (event.message.text === '查詢剩餘位置') {
         inquireMovieId = ''
         inquireLocationNum = ''
+        movieLocationNum = []
+        movieLocationCity = []
         quickRepierCity = []
         quickRepierDate = []
         movieIdIndex = movieName.indexOf(inquireMovieName)
@@ -372,7 +374,6 @@ bot.on('message', async event => {
           responseType: 'json'
         })
         data = response.data.result
-        console.log(data)
         if (data.length < 1) {
           return event.reply('抱歉，目前系統忙碌中，請查詢其他電影。')
         }
@@ -380,7 +381,6 @@ bot.on('message', async event => {
         for (const location of data) {
           movieLocationNum.push(location.location)
         }
-        console.log(movieLocationNum)
         // 求出城市名
         for (const num of movieLocationNum) {
           function isLocationNum(s) {

@@ -17,8 +17,7 @@
     "dotenv": "^8.2.0",
     "linebot": "^1.6.1",
     "run": "^1.4.0",
-    "start": "^5.1.0",
-    "cheerio": "^1.0.0-rc.10",
+    "start": "^5.1.0"
   },
   "devDependencies": {
     "eslint": "^7.25.0",
